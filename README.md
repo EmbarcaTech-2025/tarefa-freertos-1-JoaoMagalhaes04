@@ -11,18 +11,20 @@ Campinas, Junho de 2025
 
 ---
 
-Sistema Multitarefa com FreeRTOS na BitDogLabEste projeto demonstra a implementação de um sistema multitarefa embarcado utilizando o FreeRTOS em linguagem C na placa Raspberry Pi Pico (com BitDogLab). O sistema controla múltiplos periféricos de forma concorrente, gerenciando tarefas de LED, buzzer e botões de controle.FuncionalidadesO sistema opera com as seguintes tarefas:LED RGB (GPIOs 15, 14, 13): Alterna ciclicamente entre as cores vermelho, verde e azul a cada 500ms.Buzzer (GPIO 12): Emite um bipe curto periodicamente a cada 1 segundo.Botão A (GPIO 10): Permite suspender ou retomar a tarefa do LED RGB.Botão B (GPIO 11): Permite suspender ou retomar a tarefa do buzzer.As tarefas são gerenciadas pelo FreeRTOS, utilizando vTaskCreate(), vTaskDelay(), vTaskSuspend() e vTaskResume() para controle de execução e agendamento.Hardware UtilizadoPlaca de Desenvolvimento: 
+Sistema Multitarefa com FreeRTOS na BitDogLabEste projeto demonstra a implementação de um sistema multitarefa embarcado utilizando o FreeRTOS em linguagem C na placa Raspberry Pi Pico (com BitDogLab). O sistema controla múltiplos periféricos de forma concorrente, gerenciando tarefas de LED, buzzer e botões de controle.
 
+**Funcionalidades**
+O sistema opera com as seguintes tarefas:
+- LED RGB (GPIOs 15, 14, 13): Alterna ciclicamente entre as cores vermelho, verde e azul a cada 500ms.
+- Buzzer (GPIO 12): Emite um bipe curto periodicamente a cada 1 segundo.
+- Botão A (GPIO 10): Permite suspender ou retomar a tarefa do LED RGB.
+- Botão B (GPIO 11): Permite suspender ou retomar a tarefa do buzzer.
+- As tarefas são gerenciadas pelo FreeRTOS, utilizando vTaskCreate(), vTaskDelay(), vTaskSuspend() e vTaskResume() para controle de execução e agendamento.Hardware UtilizadoPlaca de Desenvolvimento: 
 - Raspberry Pi Pico W ou Raspberry Pi Pico 2 (com placa de expansão BitDogLab).
-
 - LED RGB: Conectado aos GPIOs 15 (vermelho), 14 (verde), 13 (azul).
-
 - Buzzer: Conectado ao GPIO 12.
-
 - Botão A (Controle do LED): Conectado ao GPIO 10.
-
 - Botão B (Controle do Buzzer): Conectado ao GPIO 11.
-
 - Cabo Micro-USB/USB-C: Para alimentação e gravação do firmware.
 
 **Estrurura de organização**
